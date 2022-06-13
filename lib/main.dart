@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/practice/AnimatedAlign.dart';
+import 'package:flutter_widgets/practice/AnimatedBuilder.dart';
 
 void main() => runApp(const MyApp());
 

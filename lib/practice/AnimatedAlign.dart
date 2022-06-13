@@ -23,11 +23,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         child: Container(
           width: 250.0,
           height: 250.0,
-          color: Colors.red,
+          color: Colors.grey[300],
           child: AnimatedAlign(
-            alignment: selected ? Alignment.topRight : Alignment.bottomLeft,
+            alignment: selected ? Alignment.topLeft : Alignment.bottomRight,
             duration: const Duration(seconds: 1),
-            curve: Curves.fastOutSlowIn,
+            curve: Curves.bounceIn,
             child: const FlutterLogo(size: 50.0),
           ),
         ),

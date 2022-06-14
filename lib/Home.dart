@@ -14,6 +14,7 @@ import 'package:flutter_widgets/practice/AppBar.dart';
 import 'package:flutter_widgets/practice/Column.dart';
 import 'package:flutter_widgets/practice/Container.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
+import 'package:flutter_widgets/practice/ElevatedButton.dart';
 import 'package:flutter_widgets/practice/FutureBuilder.dart';
 import 'package:flutter_widgets/practice/Image%20Icon.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
@@ -600,6 +601,31 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Spacer(),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => OO(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
+                      child: Center(
+                        child: Text('ElevatedButton',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ],

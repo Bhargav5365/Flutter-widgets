@@ -10,6 +10,7 @@ import 'package:flutter_widgets/practice/AnimatedContainer.dart';
 import 'package:flutter_widgets/practice/AnimatedPositioned.dart';
 import 'package:flutter_widgets/practice/AnimatedSize.dart';
 import 'package:flutter_widgets/practice/AnimatedWidget.dart';
+import 'package:flutter_widgets/practice/AppBar.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/FutureBuilder.dart';
 import 'package:flutter_widgets/practice/Image%20Icon.dart';
@@ -512,8 +513,34 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
+                  Spacer(),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LL(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
+                      child: Center(
+                        child: Text('AppBar',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),

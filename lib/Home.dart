@@ -11,6 +11,7 @@ import 'package:flutter_widgets/practice/AnimatedWidget.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
 import 'package:flutter_widgets/practice/PositionedTransition.dart';
+import 'package:flutter_widgets/practice/RotationTransition.dart';
 
 import 'practice/FadeTransition.dart';
 
@@ -265,7 +266,7 @@ class _HomeState extends State<Home> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => BB(),
+                          builder: (context) => EE(),
                         ),
                       );
                       print('daf');
@@ -275,7 +276,7 @@ class _HomeState extends State<Home> {
                       width: screenSize.width * 0.3,
                       color: Colors.grey[400],
                       child: Center(
-                        child: Text('DecoratedBoxTransition',
+                        child: Text('RotationTransition',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),

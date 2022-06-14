@@ -10,6 +10,7 @@ import 'package:flutter_widgets/practice/AnimatedSize.dart';
 import 'package:flutter_widgets/practice/AnimatedWidget.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
+import 'package:flutter_widgets/practice/PositionedTransition.dart';
 
 import 'practice/FadeTransition.dart';
 
@@ -232,7 +233,76 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ],
-              )
+              ),
+              SizedBox(
+                height: screenSize.height * 0.01,
+              ),
+              Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DD(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      color: Colors.grey[400],
+                      child: Center(
+                        child: Text('PositionedTransition',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => BB(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      color: Colors.grey[400],
+                      child: Center(
+                        child: Text('DecoratedBoxTransition',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CC(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      color: Colors.grey[400],
+                      child: Center(
+                        child: Text('FadeTransition',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

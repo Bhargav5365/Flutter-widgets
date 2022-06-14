@@ -1,34 +1,38 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
+class ABC extends StatefulWidget {
+  const ABC({Key? key}) : super(key: key);
 
   @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
+  State<ABC> createState() => _ABCState();
 }
 
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+class _ABCState extends State<ABC> {
   bool selected = false;
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          selected = !selected;
-        });
-      },
-      child: Center(
-        child: Container(
-          width: 250.0,
-          height: 250.0,
-          color: Colors.grey[300],
-          child: AnimatedAlign(
-            alignment: selected ? Alignment.topLeft : Alignment.bottomRight,
-            duration: const Duration(seconds: 1),
-            curve: Curves.bounceIn,
-            child: const FlutterLogo(size: 50.0),
+    return SafeArea(
+      child: Scaffold(
+        body: GestureDetector(
+          onTap: () {
+            setState(() {
+              selected = !selected;
+            });
+          },
+          child: Center(
+            child: Container(
+              width: 250.0,
+              height: 250.0,
+              color: Colors.grey[300],
+              child: AnimatedAlign(
+                alignment: selected ? Alignment.topLeft : Alignment.bottomRight,
+                duration: const Duration(seconds: 1),
+                curve: Curves.bounceIn,
+                child: const FlutterLogo(size: 50.0),
+              ),
+            ),
           ),
         ),
       ),

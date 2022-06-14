@@ -24,23 +24,27 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: AnimatedBuilder(
-        animation: _controller,
-        child: Container(
-          width: 150.0,
-          height: 150.0,
-          color: Colors.green,
-          child: Center(
-            child: Text('Hello.!!'),
+    return SafeArea(
+      child: Scaffold(
+        body: Center(
+          child: AnimatedBuilder(
+            animation: _controller,
+            child: Container(
+              width: 150.0,
+              height: 150.0,
+              color: Colors.green,
+              child: Center(
+                child: Text('Hello.!!'),
+              ),
+            ),
+            builder: (BuildContext context, Widget? child) {
+              return Transform.rotate(
+                angle: _controller.value * 10.0 * math.pi,
+                child: child,
+              );
+            },
           ),
         ),
-        builder: (BuildContext context, Widget? child) {
-          return Transform.rotate(
-            angle: _controller.value * 10.0 * math.pi,
-            child: child,
-          );
-        },
       ),
     );
   }

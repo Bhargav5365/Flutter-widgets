@@ -11,6 +11,7 @@ import 'package:flutter_widgets/practice/AnimatedPositioned.dart';
 import 'package:flutter_widgets/practice/AnimatedSize.dart';
 import 'package:flutter_widgets/practice/AnimatedWidget.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
+import 'package:flutter_widgets/practice/Image%20Icon.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
 import 'package:flutter_widgets/practice/PositionedTransition.dart';
 import 'package:flutter_widgets/practice/RotationTransition.dart';
@@ -421,6 +422,32 @@ class _HomeState extends State<Home> {
                       ),
                       child: Center(
                         child: Text('SlideTransition',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => II(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
+                      child: Center(
+                        child: Text('Image Icon',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),

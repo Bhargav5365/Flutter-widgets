@@ -11,6 +11,7 @@ import 'package:flutter_widgets/practice/AnimatedPositioned.dart';
 import 'package:flutter_widgets/practice/AnimatedSize.dart';
 import 'package:flutter_widgets/practice/AnimatedWidget.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
+import 'package:flutter_widgets/practice/FutureBuilder.dart';
 import 'package:flutter_widgets/practice/Image%20Icon.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
 import 'package:flutter_widgets/practice/PositionedTransition.dart';
@@ -454,6 +455,38 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
+              SizedBox(
+                height: screenSize.height * 0.01,
+              ),
+              Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => JJ(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
+                      child: Center(
+                        child: Text('FutureBuilder',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),

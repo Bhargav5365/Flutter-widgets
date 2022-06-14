@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, avoid_print, unnecessary_import
+
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
@@ -12,6 +14,8 @@ import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
 import 'package:flutter_widgets/practice/PositionedTransition.dart';
 import 'package:flutter_widgets/practice/RotationTransition.dart';
+import 'package:flutter_widgets/practice/SizeTransition.dart';
+import 'package:flutter_widgets/practice/SlideTransition.dart';
 
 import 'practice/FadeTransition.dart';
 import 'practice/ScaleTransition.dart';
@@ -48,7 +52,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('MergeSemantics',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -69,7 +78,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('Animatedpositioned',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -90,7 +104,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('AnimatedContainer',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -116,7 +135,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('AnimatedBuilder',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -137,7 +161,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('AnimatedAlign',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -158,7 +187,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('AnimatedSize',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -185,7 +219,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('AnimatedWidget',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -206,7 +245,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('DecoratedBoxTransition',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -227,7 +271,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('FadeTransition',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -254,7 +303,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('PositionedTransition',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -275,7 +329,12 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('RotationTransition',
                             style: TextStyle(fontWeight: FontWeight.bold)),
@@ -296,9 +355,72 @@ class _HomeState extends State<Home> {
                     child: Container(
                       height: screenSize.height * 0.1,
                       width: screenSize.width * 0.3,
-                      color: Colors.grey[400],
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
                       child: Center(
                         child: Text('ScaleTransition',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: screenSize.height * 0.01,
+              ),
+              Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GG(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
+                      child: Center(
+                        child: Text('SizeTransition',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HH(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                      ),
+                      child: Center(
+                        child: Text('SlideTransition',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),

@@ -11,6 +11,8 @@ import 'package:flutter_widgets/practice/AnimatedWidget.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
 
+import 'practice/FadeTransition.dart';
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -204,6 +206,27 @@ class _HomeState extends State<Home> {
                       color: Colors.grey[400],
                       child: Center(
                         child: Text('DecoratedBoxTransition',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CC(),
+                        ),
+                      );
+                      print('daf');
+                    },
+                    child: Container(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 0.3,
+                      color: Colors.grey[400],
+                      child: Center(
+                        child: Text('FadeTransition',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),

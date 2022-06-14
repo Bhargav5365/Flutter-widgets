@@ -14,6 +14,7 @@ import 'package:flutter_widgets/practice/PositionedTransition.dart';
 import 'package:flutter_widgets/practice/RotationTransition.dart';
 
 import 'practice/FadeTransition.dart';
+import 'practice/ScaleTransition.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -287,7 +288,7 @@ class _HomeState extends State<Home> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => CC(),
+                          builder: (context) => FF(),
                         ),
                       );
                       print('daf');
@@ -297,7 +298,7 @@ class _HomeState extends State<Home> {
                       width: screenSize.width * 0.3,
                       color: Colors.grey[400],
                       child: Center(
-                        child: Text('FadeTransition',
+                        child: Text('ScaleTransition',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),

@@ -6,6 +6,7 @@ import 'package:flutter_widgets/practice/AnimatedAlign.dart';
 import 'package:flutter_widgets/practice/AnimatedBuilder.dart';
 import 'package:flutter_widgets/practice/AnimatedContainer.dart';
 import 'package:flutter_widgets/practice/AnimatedPositioned.dart';
+import 'package:flutter_widgets/practice/AnimatedSize.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
 
 class Home extends StatefulWidget {
@@ -142,7 +143,7 @@ class _HomeState extends State<Home> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Animate(),
+                          builder: (context) => XYZ(),
                         ),
                       );
                       print('daf');
@@ -152,7 +153,7 @@ class _HomeState extends State<Home> {
                       width: screenSize.width * 0.3,
                       color: Colors.grey[400],
                       child: Center(
-                        child: Text('AnimatedContainer',
+                        child: Text('AnimatedSize',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),

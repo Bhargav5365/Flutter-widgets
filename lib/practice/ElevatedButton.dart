@@ -10,9 +10,9 @@ class OO extends StatefulWidget {
 class _OOState extends State<OO> {
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style =
-        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
-
+    final ButtonStyle style = ElevatedButton.styleFrom(
+      textStyle: const TextStyle(fontSize: 20),
+    );
     return SafeArea(
       child: Scaffold(
         body: Center(

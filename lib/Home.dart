@@ -20,6 +20,7 @@ import 'package:flutter_widgets/practice/Image%20Icon.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
 import 'package:flutter_widgets/practice/PositionedTransition.dart';
 import 'package:flutter_widgets/practice/RotationTransition.dart';
+import 'package:flutter_widgets/practice/Row.dart';
 import 'package:flutter_widgets/practice/SizeTransition.dart';
 import 'package:flutter_widgets/practice/SlideTransition.dart';
 import 'package:flutter_widgets/practice/StreamBuilder.dart';
@@ -43,592 +44,626 @@ class _HomeState extends State<Home> {
       child: Scaffold(
         body: Padding(
           padding: const EdgeInsets.all(10),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => SplashScreen(),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SplashScreen(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('MergeSemantics',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('MergeSemantics',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Animatedpositioned(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Animatedpositioned(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('Animatedpositioned',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('Animatedpositioned',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Animate(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Animate(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('AnimatedContainer',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('AnimatedContainer',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: screenSize.height * 0.01,
-              ),
-              Row(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MyStatefulWidget(),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MyStatefulWidget(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('AnimatedBuilder',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('AnimatedBuilder',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => ABC(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ABC(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('AnimatedAlign',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('AnimatedAlign',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => XYZ(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => XYZ(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('AnimatedSize',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('AnimatedSize',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: screenSize.height * 0.01,
-              ),
-              Row(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => AA(),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AA(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('AnimatedWidget',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('AnimatedWidget',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => BB(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BB(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('DecoratedBoxTransition',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('DecoratedBoxTransition',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => CC(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CC(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('FadeTransition',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('FadeTransition',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: screenSize.height * 0.01,
-              ),
-              Row(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => DD(),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => DD(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('PositionedTransition',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('PositionedTransition',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => EE(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => EE(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('RotationTransition',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('RotationTransition',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => FF(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => FF(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('ScaleTransition',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('ScaleTransition',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: screenSize.height * 0.01,
-              ),
-              Row(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => GG(),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => GG(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('SizeTransition',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('SizeTransition',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => HH(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => HH(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('SlideTransition',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('SlideTransition',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => II(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => II(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('Image Icon',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('Image Icon',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: screenSize.height * 0.01,
-              ),
-              Row(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => JJ(),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => JJ(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('FutureBuilder',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('FutureBuilder',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => KK(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => KK(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('StreamBuilder',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('StreamBuilder',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LL(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LL(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('AppBar',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('AppBar',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: screenSize.height * 0.01,
-              ),
-              Row(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MM(),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MM(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('Column',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('Column',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => NN(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NN(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('Container',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('Container',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                  Spacer(),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => OO(),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => OO(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
                         ),
-                      );
-                      print('daf');
-                    },
-                    child: Container(
-                      height: screenSize.height * 0.1,
-                      width: screenSize.width * 0.3,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400],
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                        child: Center(
+                          child: Text('ElevatedButton',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      child: Center(
-                        child: Text('ElevatedButton',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
                       ),
                     ),
-                  ),
-                ],
-              ),
-            ],
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => PP(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('Row',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

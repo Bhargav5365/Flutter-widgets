@@ -21,6 +21,7 @@ import 'package:flutter_widgets/practice/MergeSemantics.dart';
 import 'package:flutter_widgets/practice/PositionedTransition.dart';
 import 'package:flutter_widgets/practice/RotationTransition.dart';
 import 'package:flutter_widgets/practice/Row.dart';
+import 'package:flutter_widgets/practice/Scaffold.dart';
 import 'package:flutter_widgets/practice/SizeTransition.dart';
 import 'package:flutter_widgets/practice/SlideTransition.dart';
 import 'package:flutter_widgets/practice/StreamBuilder.dart';
@@ -656,6 +657,32 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Row',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => QQ(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('Scaffold',
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),

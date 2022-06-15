@@ -15,6 +15,7 @@ import 'package:flutter_widgets/practice/Column.dart';
 import 'package:flutter_widgets/practice/Container.dart';
 import 'package:flutter_widgets/practice/CupertinoActionSheet.dart';
 import 'package:flutter_widgets/practice/CupertinoAlertDialog.dart';
+import 'package:flutter_widgets/practice/CupertinoButton.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/ElevatedButton.dart';
 import 'package:flutter_widgets/practice/FutureBuilder.dart';
@@ -781,6 +782,32 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('CupertinoAlertDialog',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => TT(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('CupertinoButton',
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),

@@ -19,6 +19,7 @@ import 'package:flutter_widgets/practice/CupertinoButton.dart';
 import 'package:flutter_widgets/practice/CupertinoContextMenu.dart';
 import 'package:flutter_widgets/practice/CupertinoDatePicker.dart';
 import 'package:flutter_widgets/practice/CupertinoNavigationBar.dart';
+import 'package:flutter_widgets/practice/CupertinoPageScaffold.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/ElevatedButton.dart';
 import 'package:flutter_widgets/practice/FutureBuilder.dart';
@@ -934,6 +935,40 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => XX(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('CupertinoPageScaffold',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
                   ],
                 ),
               ],

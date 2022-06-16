@@ -11,6 +11,7 @@ import 'package:flutter_widgets/practice/AnimatedPositioned.dart';
 import 'package:flutter_widgets/practice/AnimatedSize.dart';
 import 'package:flutter_widgets/practice/AnimatedWidget.dart';
 import 'package:flutter_widgets/practice/AppBar.dart';
+import 'package:flutter_widgets/practice/Autocomplete.dart';
 import 'package:flutter_widgets/practice/Column.dart';
 import 'package:flutter_widgets/practice/Container.dart';
 import 'package:flutter_widgets/practice/CupertinoActionSheet.dart';
@@ -1294,6 +1295,49 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Text(
+                    "Normal",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                AutocompleteBasicUserExample(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('Autocomplete',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
                   ],
                 ),
               ],

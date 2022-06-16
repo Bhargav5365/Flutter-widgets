@@ -4,12 +4,12 @@ import 'package:flutter/cupertino.dart';
 
 const double _kItemExtent = 32.0;
 const List<String> _fruitNames = <String>[
-  'Apple',
-  'Mango',
-  'Banana',
   'Orange',
-  'Pineapple',
   'Strawberry',
+  'Pineapple',
+  'Apple',
+  'Banana',
+  'Mango',
 ];
 
 class CupertinoPickerSample extends StatefulWidget {

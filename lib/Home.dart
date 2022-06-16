@@ -26,6 +26,7 @@ import 'package:flutter_widgets/practice/CupertinoSearchTextField.dart';
 import 'package:flutter_widgets/practice/CupertinoSegmentedControl.dart';
 import 'package:flutter_widgets/practice/CupertinoSlider.dart';
 import 'package:flutter_widgets/practice/CupertinoSliverNavigationBar.dart';
+import 'package:flutter_widgets/practice/CupertinoSwitch.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/ElevatedButton.dart';
 import 'package:flutter_widgets/practice/FutureBuilder.dart';
@@ -1143,6 +1144,33 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('CupertinoSliverNavigationBar',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ZZ(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('CupertinoSwitch',
                               textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),

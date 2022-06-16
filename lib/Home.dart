@@ -27,6 +27,7 @@ import 'package:flutter_widgets/practice/CupertinoSegmentedControl.dart';
 import 'package:flutter_widgets/practice/CupertinoSlider.dart';
 import 'package:flutter_widgets/practice/CupertinoSliverNavigationBar.dart';
 import 'package:flutter_widgets/practice/CupertinoSwitch.dart';
+import 'package:flutter_widgets/practice/CupertinoTabBar.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/ElevatedButton.dart';
 import 'package:flutter_widgets/practice/FutureBuilder.dart';
@@ -1177,6 +1178,32 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AAA(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('CupertinoTabBar',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],

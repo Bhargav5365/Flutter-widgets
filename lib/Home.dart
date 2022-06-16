@@ -18,6 +18,7 @@ import 'package:flutter_widgets/practice/CupertinoAlertDialog.dart';
 import 'package:flutter_widgets/practice/CupertinoButton.dart';
 import 'package:flutter_widgets/practice/CupertinoContextMenu.dart';
 import 'package:flutter_widgets/practice/CupertinoDatePicker.dart';
+import 'package:flutter_widgets/practice/CupertinoNavigationBar.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/ElevatedButton.dart';
 import 'package:flutter_widgets/practice/FutureBuilder.dart';
@@ -76,6 +77,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('MergeSemantics',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -102,6 +104,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Animatedpositioned',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -128,6 +131,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('AnimatedContainer',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -159,6 +163,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('AnimatedBuilder',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -185,6 +190,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('AnimatedAlign',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -211,6 +217,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('AnimatedSize',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -243,6 +250,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('AnimatedWidget',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -269,6 +277,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('DecoratedBoxTransition',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -295,6 +304,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('FadeTransition',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -327,6 +337,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('PositionedTransition',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -353,6 +364,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('RotationTransition',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -379,6 +391,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('ScaleTransition',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -411,6 +424,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('SizeTransition',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -437,6 +451,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('SlideTransition',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -463,6 +478,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Image Icon',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -495,6 +511,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('FutureBuilder',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -521,6 +538,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('StreamBuilder',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -547,6 +565,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('AppBar',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -579,6 +598,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Column',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -605,6 +625,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Container',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -631,6 +652,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('ElevatedButton',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -663,6 +685,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Row',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -689,6 +712,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Scaffold',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -715,6 +739,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Text',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -728,6 +753,7 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.all(10),
                   child: Text(
                     "IOS",
+                    textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -756,6 +782,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('CupertinoActionSheet',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -784,6 +811,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('CupertinoAlertDialog',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -810,6 +838,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('CupertinoButton',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -842,6 +871,7 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('CupertinoContextMenu',
+                              textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -867,8 +897,40 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         child: Center(
-                          child: Text('CupertinoDatePicker',
-                              style: TextStyle(fontWeight: FontWeight.bold),),
+                          child: Text(
+                            'CupertinoDatePicker',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => WW(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'CupertinoNavigationBar',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ),
                     ),

@@ -4,6 +4,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/practice/AbsorbPointer.dart';
 import 'package:flutter_widgets/practice/AnimatedAlign.dart';
 import 'package:flutter_widgets/practice/AnimatedBuilder.dart';
 import 'package:flutter_widgets/practice/AnimatedContainer.dart';
@@ -1338,13 +1339,13 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
-                    Spacer(),                    GestureDetector(
+                    Spacer(),
+                    GestureDetector(
                       onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) =>
-                                DDD(),
+                            builder: (context) => DDD(),
                           ),
                         );
                         print('daf');
@@ -1365,7 +1366,33 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
-
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => EEE(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('AbsorbPointer',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],

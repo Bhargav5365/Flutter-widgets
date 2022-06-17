@@ -16,6 +16,7 @@ import 'package:flutter_widgets/Material%20Components/Drawer.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Checkbox.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Radio.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Slider.dart';
+import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/TextField.dart';
 import 'package:flutter_widgets/Material%20Components/TabBar.dart';
 import 'package:flutter_widgets/practice/AbsorbPointer.dart';
 import 'package:flutter_widgets/practice/AnimatedAlign.dart';
@@ -2353,6 +2354,40 @@ class _HomeState extends State<Home> {
                       ),
                     ),
 
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => IIII(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('TextField',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
                   ],
                 ),
               ],

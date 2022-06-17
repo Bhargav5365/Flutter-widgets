@@ -51,6 +51,7 @@ import 'package:flutter_widgets/practice/Hero.dart';
 import 'package:flutter_widgets/practice/IgnorePointer.dart';
 import 'package:flutter_widgets/practice/Image%20Icon.dart';
 import 'package:flutter_widgets/practice/InteractiveViewer.dart';
+import 'package:flutter_widgets/practice/LayoutBuilder.dart';
 import 'package:flutter_widgets/practice/MergeSemantics.dart';
 import 'package:flutter_widgets/practice/Offstage.dart';
 import 'package:flutter_widgets/practice/PositionedTransition.dart';
@@ -1816,6 +1817,33 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => RRR(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('LayoutBuilder',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+
                   ],
                 ),
               ],

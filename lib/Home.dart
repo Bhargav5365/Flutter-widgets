@@ -61,6 +61,7 @@ import 'package:flutter_widgets/practice/Row.dart';
 import 'package:flutter_widgets/practice/Scaffold.dart';
 import 'package:flutter_widgets/practice/SizeTransition.dart';
 import 'package:flutter_widgets/practice/SlideTransition.dart';
+import 'package:flutter_widgets/practice/SliverAppBar.dart';
 import 'package:flutter_widgets/practice/StreamBuilder.dart';
 import 'package:flutter_widgets/practice/Table.dart';
 import 'package:flutter_widgets/practice/Text.dart';
@@ -1906,6 +1907,32 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => UUU(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('SliverAppBar',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],

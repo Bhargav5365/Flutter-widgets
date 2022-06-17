@@ -17,6 +17,7 @@ import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/A
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Card.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Checkbox.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/CircularProgressIndicator.dart';
+import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/DataTable.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Radio.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Slider.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/SnackBar.dart';
@@ -2505,6 +2506,32 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NNNN(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('DataTable',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],

@@ -40,6 +40,7 @@ import 'package:flutter_widgets/practice/ElevatedButton.dart';
 import 'package:flutter_widgets/practice/Form.dart';
 import 'package:flutter_widgets/practice/FutureBuilder.dart';
 import 'package:flutter_widgets/practice/GestureDetector.dart';
+import 'package:flutter_widgets/practice/Hero.dart';
 import 'package:flutter_widgets/practice/IgnorePointer.dart';
 import 'package:flutter_widgets/practice/Image%20Icon.dart';
 import 'package:flutter_widgets/practice/InteractiveViewer.dart';
@@ -1546,6 +1547,32 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => KKK(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('Hero',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],

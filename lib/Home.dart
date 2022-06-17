@@ -34,6 +34,7 @@ import 'package:flutter_widgets/practice/CupertinoTabBar.dart';
 import 'package:flutter_widgets/practice/CupertinoTabScaffold.dart';
 import 'package:flutter_widgets/practice/CupertinoTextField.dart';
 import 'package:flutter_widgets/practice/CupertinoTimerPicker.dart';
+import 'package:flutter_widgets/practice/CustomMultiChildLayout.dart';
 import 'package:flutter_widgets/practice/DecoratedBoxTransition.dart';
 import 'package:flutter_widgets/practice/Dismissible.dart';
 import 'package:flutter_widgets/practice/Draggable.dart';
@@ -1726,6 +1727,32 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => QQQ(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('CustomMultiChildLayout',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],

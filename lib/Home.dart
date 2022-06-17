@@ -14,6 +14,7 @@ import 'package:flutter_widgets/Material%20Components/Buttons/PopupMenuButton.da
 import 'package:flutter_widgets/Material%20Components/Buttons/TextButton.dart';
 import 'package:flutter_widgets/Material%20Components/Drawer.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Checkbox.dart';
+import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Radio.dart';
 import 'package:flutter_widgets/Material%20Components/TabBar.dart';
 import 'package:flutter_widgets/practice/AbsorbPointer.dart';
 import 'package:flutter_widgets/practice/AnimatedAlign.dart';
@@ -2291,6 +2292,33 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('Checkbox',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => GGGG(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('Radio',
                               textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),

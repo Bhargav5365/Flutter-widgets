@@ -13,6 +13,7 @@ import 'package:flutter_widgets/Material%20Components/Buttons/OutlinedButton.dar
 import 'package:flutter_widgets/Material%20Components/Buttons/PopupMenuButton.dart';
 import 'package:flutter_widgets/Material%20Components/Buttons/TextButton.dart';
 import 'package:flutter_widgets/Material%20Components/Drawer.dart';
+import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/AlertDialog.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Checkbox.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Radio.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Slider.dart';
@@ -2353,7 +2354,6 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
-
                   ],
                 ),
                 SizedBox(
@@ -2382,6 +2382,33 @@ class _HomeState extends State<Home> {
                         ),
                         child: Center(
                           child: Text('TextField',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => JJJJ(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('AlertDialog',
                               textAlign: TextAlign.center,
                               style: TextStyle(fontWeight: FontWeight.bold)),
                         ),

@@ -14,6 +14,7 @@ import 'package:flutter_widgets/Material%20Components/Buttons/PopupMenuButton.da
 import 'package:flutter_widgets/Material%20Components/Buttons/TextButton.dart';
 import 'package:flutter_widgets/Material%20Components/Drawer.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/AlertDialog.dart';
+import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Card.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Checkbox.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Radio.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Slider.dart';
@@ -2442,6 +2443,40 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
+                  ],
+                ),
+                SizedBox(
+                  height: screenSize.height * 0.01,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LLLL(),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('Card',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
                   ],
                 ),
               ],

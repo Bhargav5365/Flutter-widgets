@@ -21,6 +21,7 @@ import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/D
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Divider.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/LinearProgressIndicator.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Radio.dart';
+import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/RefreshIndicator.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Slider.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/SnackBar.dart';
 import 'package:flutter_widgets/Material%20Components/Input%20and%20selections/Stepper.dart';
@@ -2657,7 +2658,34 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Spacer(),
-
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => RefreshIndicatorExample(
+                              title: '',
+                            ),
+                          ),
+                        );
+                        print('daf');
+                      },
+                      child: Container(
+                        height: screenSize.height * 0.1,
+                        width: screenSize.width * 0.3,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text('RefreshIndicator',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],
